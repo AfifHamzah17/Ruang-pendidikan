@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Sistem Informasi Peminjaman Lab | <?php echo $title; ?></title>
+  <title>Pemilihan Tempat KKN 2023 | <?php echo $title; ?></title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,10 +18,11 @@
   <link rel="stylesheet" href="<?php echo base_url('assets/') ?>plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
   <link rel="stylesheet" href="<?php echo base_url('assets/') ?>plugins/toastr/toastr.min.css">
   <link rel="stylesheet" href="<?php echo base_url('assets/') ?>dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?php echo base_url('assets/') ?>dist/css/background.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-
+<!--  -->
 <body class="hold-transition login-page" style="background: url('<?php echo base_url('assets/') ?>dist/img/bg.jpg');">
   <?php $this->load->view('ekstra/modal') ?>
   <div class="login-box">
@@ -29,9 +30,11 @@
     <div class="card">
       <div class="card-body login-card-body">
         <?php $site = $this->db->get('site')->result(); ?>
-        <center><img src="<?php echo base_url('files/site/'.$site[0]->logo) ?>" width="125"></center>
+        <center><img src="<?php echo base_url('files/site/unimed.png') ?>" width="125"></center>
         <div class="logo text-center">
-          <h3><?php echo $site[0]->title ?></h3>
+          <br>
+          <h3>Pemilihan Tempat <br>KKN 2023 </h3>
+          <br>
         </div>
 
         <span class="text-red" id="message"></span>
@@ -47,7 +50,7 @@
           </div>
           <?php echo form_error('username'); ?>
           <div class="input-group mb-3">
-            <input type="password" name="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" id="password" class="form-control" placeholder="Password">
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>

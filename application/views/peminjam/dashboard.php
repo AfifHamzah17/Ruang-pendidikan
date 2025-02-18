@@ -23,7 +23,7 @@ endforeach;
     <div class="container">
       <a href="index.php" class="navbar-brand">
 
-        <span class="brand-text font-weight-light">Siplabs</span>
+        <span class="brand-text font-weight-light">Ruang Pendidikan</span>
       </a>
 
       <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
